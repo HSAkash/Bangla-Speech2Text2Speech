@@ -24,6 +24,8 @@ dependencies = [
     "click",
     'gtts',
     'loguru',
+    'librosa',
+    'numpy==1.26.4',
     'nemo_toolkit[asr]',
     'pyprojroot',
     'python-box',
