@@ -25,6 +25,7 @@ dependencies = [
     'gtts',
     'loguru',
     'nemo_toolkit[asr]',
+    'pyprojroot',
     'python-box',
     'PyYAML'
 ]
