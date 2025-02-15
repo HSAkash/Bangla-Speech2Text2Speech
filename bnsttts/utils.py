@@ -2,12 +2,11 @@ import yaml
 from box import ConfigBox
 from pathlib import Path
 from bnsttts import logger
-from pyprojroot import here
 from box.exceptions import BoxValueError
 
 
 
-CONFIG_PATH = Path(here("configs/config.yaml"))
+CONFIG_PATH = Path("configs/config.yaml")
 
 def read_yaml(path_to_yaml:Path) -> ConfigBox:
     """reads yaml file and returns
