@@ -2,6 +2,9 @@ import os
 import sys
 from loguru import logger
 
+# Define version
+__version__ = "0.0.1"
+
 # Define log directory and file
 log_dir = "logs"
 log_filepath = os.path.join(log_dir, "bnsttts_logs.log")
