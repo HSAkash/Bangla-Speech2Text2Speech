@@ -1,7 +1,7 @@
 import os
 import click
-from stt import STT
-from tts import TTS
+from bnsttts.stt import STT
+from bnsttts.tts import TTS
 from bnsttts.utils import get_config
 from bnsttts import logger
 
