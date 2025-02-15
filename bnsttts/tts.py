@@ -1,6 +1,4 @@
 from gtts import gTTS
-from pyprojroot import here
-from bnsttts.utils import get_config
 from bnsttts import logger
 
 class TTS:

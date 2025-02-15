@@ -1,5 +1,4 @@
 import nemo.collections.asr as nemo_asr
-from bnsttts.utils import get_config
 from typing import List
 from bnsttts import logger
 import librosa
@@ -7,9 +6,9 @@ import librosa
 class STT:
     """Speech to Text class using Nemo ASR model"""
     def __init__(self, ):
-        self.config = get_config()
+        self.model_name = "hishab/titu_stt_bn_fastconformer"
         self.model = nemo_asr.models.ASRModel.from_pretrained(
-            model_name = self.config.stt.model_name
+            model_name = self.model_name
         )
 
     def preprocess(self, audio_file_path: str) -> str:

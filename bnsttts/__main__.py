@@ -2,10 +2,7 @@ import os
 import click
 from bnsttts.stt import STT
 from bnsttts.tts import TTS
-from bnsttts.utils import get_config
 from bnsttts import logger
-
-config = get_config()
 
 
 # Click settings
@@ -18,7 +15,7 @@ CONTEXT_SETTINGS = {"help_option_names": ["-h", "--help"]}
 @click.option(
     '--lang', '-l', 
     type=str,
-    default=config.tts.lang, 
+    default='bn', 
     help='Language to speak in (e.g., en, bn')
 
 @click.option('--tts', '-t', is_flag=True, help='For text to speech.')

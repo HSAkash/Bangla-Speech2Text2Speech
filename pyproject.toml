@@ -26,10 +26,7 @@ dependencies = [
     "loguru",
     "librosa",
     "numpy==1.26.4",
-    "nemo_toolkit[asr]",
-    "pyprojroot",
-    "python-box",
-    "PyYAML"
+    "nemo_toolkit[asr]"
 ]
 
 [project.scripts]
