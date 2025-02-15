@@ -35,10 +35,16 @@ dependencies = [
 [project.scripts]
 bnsttts = "bnsttts.__main__:main"
 
+[project.optional-dependencies]
+cli-enhanced = ["rich"]
+testing = ["pytest", "pytest-cov", "tox"]
 
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["bnsttts"]  # Explicitly include only the main package
 
 [tool.ruff]
 select = ["E", "F", "W"]
