@@ -38,12 +38,11 @@ def main(content, output, lang, tts, stt, slow) -> str:
         str: Path to the generated audio file or transcribe text.
     """
     if tts:
-        print(output)
         if not os.path.exists(os.path.dirname(output)):
             logger.info(f"Creating directory {os.path.dirname(output)}")
         tts = TTS()
-        audio_file_path = tts.speak(content, output, lang=lang, slow=slow)
-        logger.info(f"Audio file saved at {audio_file_path}")
+        tts.speak(content, output, lang=lang, slow=slow)
+        logger.info(f"Audio file saved at {output}")
         
     elif stt:
         if not os.path.exists(content):
