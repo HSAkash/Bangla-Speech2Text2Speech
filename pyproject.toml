@@ -8,19 +8,28 @@ authors = [
     { name = "HSAkash", email = "hemelakash472@gmail.com" },
 ]
 description = "Bangla Speech to Text & Text to Speech."
-keywords = ["stt", "tts", "bn]
+keywords = ["stt", "tts", "bn"]
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+]
 
 
 dependencies = [
     "click",
-    'gtts',
-    'loguru',
-    'librosa',
-    'numpy==1.26.4',
-    'nemo_toolkit[asr]',
-    'pyprojroot',
-    'python-box',
-    'PyYAML'
+    "gtts",
+    "loguru",
+    "librosa",
+    "numpy==1.26.4",
+    "nemo_toolkit[asr]",
+    "pyprojroot",
+    "python-box",
+    "PyYAML"
 ]
 
 [project.scripts]
